@@ -48,7 +48,8 @@ body {
   font-size: var(--font-size);
 }
 
-.header-items:hover {
+.header-items:hover,
+.active {
   color: #facc15;
   text-decoration: underline;
   cursor: pointer;
@@ -96,6 +97,7 @@ body {
 .menu-text {
   font-size: var(--font-bold);
   font-weight: bold;
+  margin-top: 1.5rem;
 }
 
 .menu-item {
@@ -131,6 +133,7 @@ img {
 .phone {
   font-size: var(--font-bold);
   font-weight: bold;
+  margin-top: 1.5rem;
 }
 
 .font {
