@@ -15,6 +15,9 @@ restaurantName.classList.add("restaurant-name");
 home.classList.add("header-items");
 menu.classList.add("header-items");
 contact.classList.add("header-items");
+home.classList.add("home");
+menu.classList.add("menuu");
+contact.classList.add("contact");
 header.append(restaurantName, home, menu, contact);
 
 // creating the footer
@@ -33,7 +36,7 @@ aboutDescription.classList.add("about-text");
 aboutDescription.textContent +=
   "Here at Krusty Krab Restaurant We sell burgers at a good ";
 const moneySpan = document.createElement("span");
-moneySpan.textContent = "Price";
+moneySpan.textContent = "price";
 aboutDescription.append(moneySpan);
 aboutDescription.textContent += ` You know what I mean Lorem ipsum dolor sit amet
 consectetur adipisicing elit. Voluptatum nobis ducimus atque
@@ -47,4 +50,12 @@ function appendingInitialPage() {
   content.append(footer);
 }
 
-export { appendingInitialPage };
+function appendHeader() {
+  content.append(header);
+}
+
+function appendFooter() {
+  content.append(footer);
+}
+
+export { appendingInitialPage, appendHeader, appendFooter };
